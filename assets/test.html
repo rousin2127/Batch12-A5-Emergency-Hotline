@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- tailwind cdn   -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+  <header>
+  <nav class="flex justify-between items-center mx-4 sm:mx-20 border-black border-2 h-[70px] sm:h-[100px] p-3 relative">
+      
+    <!-- Logo -->
+    <div class="flex items-center gap-2 sm:gap-[10px]">
+      <img class="h-[50px] sm:h-[60px]" src="assets/logo.png" alt="">
+      <h1 class="leading-[20px] sm:leading-[28px] font-bold text-[20px] sm:text-[25px] text-[#006747] inter-font">
+        Emergency<br class="hidden sm:block"> Service
+      </h1>
+    </div>
+
+    <!-- Hamburger button (only on mobile) -->
+    <button id="menuToggle" class="sm:hidden flex flex-col gap-1 p-2 border rounded-md">
+      <span class="block w-6 h-[3px] bg-black"></span>
+      <span class="block w-6 h-[3px] bg-black"></span>
+      <span class="block w-6 h-[3px] bg-black"></span>
+    </button>
+
+    <!-- Right Menu (desktop visible, mobile hidden until hamburger is clicked) -->
+    <div id="rightMenu" class="hidden sm:flex flex-col sm:flex-row absolute sm:static top-[70px] right-2 sm:right-auto bg-white sm:bg-transparent border sm:border-0 shadow sm:shadow-none p-4 sm:p-0 gap-4 sm:gap-[20px] items-center justify-center rounded-lg">
+      
+      <!-- Heart -->
+      <div class="heart w-[125px] h-[52px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px] cursor-pointer">
+        <img class="h-[40px]" src="assets/heart.png" alt="">
+        <span id="heartCount" class="ml-2 font-bold text-green-700">0</span>
+      </div>
+
+      <!-- Coin -->
+      <div class="coin w-[125px] h-[52px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px] cursor-pointer">
+        <img class="h-[40px]" src="assets/coin.png" alt="">
+        <span id="coinCount" class="ml-2 font-bold text-yellow-600">100</span>
+      </div>
+
+      <!-- Copy -->
+      <div class="copy w-[125px] h-[52px] bg-[#00A63E] flex items-center justify-center rounded-[50px] cursor-pointer">
+        <p id="copyCount" class="text-white text-[20px] font-semibold inter-font">2 Copy</p>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+<!-- <h1 class="text-green-700 font-bold text-[50px] hind-madurai">Emergency Hotline</h1> -->
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
