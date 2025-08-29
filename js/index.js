@@ -115,9 +115,9 @@ clearBtn.addEventListener("click", function () {
     const historyContainer = document.querySelector("#historyContainer");
     const historyItems = historyContainer.querySelectorAll("ul");
 
-    if (historyItems.length > 0) {
+    // if (historyItems.length > 0) {
         for (let historyItem of historyItems) {
             historyItem.remove();  // Remove each history item
         }
-    }
+    // }
 });

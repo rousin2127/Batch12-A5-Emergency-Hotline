@@ -15,26 +15,26 @@
 </head>
 <body>
     <header>
-        <nav class="flex justify-between mx-[50px] h-[100px]  items-center">
+        <nav class="flex justify-between mx-[20px] sm:mx-[50px] sm:h-[100px]  items-center">
 
-            <div class="flex items-center gap-[10px] h-[50px]">
-                <img class="h-[60px]" src="assets/logo.png" alt="">
-                <h1 class="leading-[28px] font-bold text-[25px] text-[#006747] inter-font ">Emergency<br>Service</h1>
+            <div class="flex items-center gap-2 sm:gap-[10px] h-[50px]">
+                <img class="h-[40px] sm:h-[60px]" src="assets/logo.png" alt="">
+                <h1 class="leading-5 sm:leading-[28px] font-bold text-[14px] sm:text-[25px] text-[#006747] inter-font ">Emergency<br>Service</h1>
             </div>
 
-            <div class="right-nav flex flex-wrap sm:flex-nowrap items-center gap-[20px] h-[55px] ">
+            <div class="right-nav flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-[20px] h-[55px] ">
 
-                <div class="heart w-[125px] h-[52px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px]  gap-[10px]">
-                    <span id="heartCount" class="font-bold text-[20px]">0</span>
-                    <img class="h-[30px]" src="assets/heart.png" alt="">
+                <div class="heart w-[70px] sm:w-[125px] h-[25px] sm:h-[50px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px]  gap-[10px]">
+                    <span id="heartCount" class="font-bold text-[12px] sm:text-[20px]">0</span>
+                    <img class="h-[20px] sm:h-[30px]" src="assets/heart.png" alt="">
                 </div>
-                <div class="coin w-[125px] h-[52px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px] gap-[10px] ">
-                    <span id="coinCount" class="font-bold text-[20px]">100</span>
-                    <img class="h-[30px]" src="assets/coin.png" alt="">
+                <div class="coin w-[70px] sm:w-[125px] h-[25px] sm:h-[50px] flex items-center justify-center bg-[#41ff6a1a] rounded-[50px] gap-[10px] ">
+                    <span id="coinCount" class="font-bold text-[12px] sm:text-[20px]">100</span>
+                    <img class="h-[20px] sm:h-[30px]" src="assets/coin.png" alt="">
                 </div>
-                <div class="copy w-[125px] h-[52px] bg-[#00A63E] flex items-center justify-center rounded-[50px] gap-[10px]">
-                    <span id="copyCount" class="font-bold text-[20px] text-white"></span>
-                    <p class="text-white text-[20px] font-semibold inter-font">Copy</p>
+                <div class="copy w-[70px] sm:w-[125px] h-[25px] sm:h-[50px] bg-[#00A63E] flex items-center justify-center rounded-[50px] gap-[10px]">
+                    <span id="copyCount" class="font-bold text-[12px] sm:text-[20px] text-white">0</span>
+                    <p class="text-white text-[12px] sm:text-[20px] font-semibold inter-font">Copy</p>
 
                 </div>
 
@@ -44,11 +44,11 @@
 
         <!-- Hero section -->
 
-        <section class=" flex justify-center items-center h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <section class=" flex justify-center items-center sm:h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
             <div class="flex flex-col justify-center items-center">
-                <img class="h-[92px]" src="assets/logo-dark.png" alt="">
-                <h1 class="hind-madurai text-[40px] font-bold text-white">Emergency Service Directory</h1>
-                <p class="hind-madurai text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <img class="mt-[15px] h-[65px] sm:h-[92px]" src="assets/logo-dark.png" alt="">
+                <h1 class="hind-madurai text-[20px] sm:text-[40px] font-bold text-white">Emergency Service Directory</h1>
+                <p class="hind-madurai text-center text-[12px] sm:text-[20px] text-white mb-[15px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
         </section>
     </header>
@@ -56,8 +56,8 @@
     <!-- main section  -->
     <main class="bg-[#F5FFF6] h-full">
         <section class="mx-[50px] flex justify-center">
-            <div class=" flex  my-[50px] justify-center gap-[30px]">
-                <div class="grid grid-cols-3 gap-[30px]">
+            <div class=" sm:flex sm:flex-row flex flex-col-reverse my-[50px] justify-center gap-[30px]">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-[30px]">
                     <div id="National-emergency" class="action-card bg-white rounded-[10px] p-[20px] shadow-lg shadow-gray-500">
                         <div class="flex justify-between h-[50px] items-center ">
                             <div class="bg-[#FFE3E2] flex justify-center items-center p-[10px] rounded-[15px] ">
@@ -181,7 +181,7 @@
 
 
                 </div>
-                <div id="rightContainer" class="w-[25%]">
+                <div id="rightContainer" class="sm:w-[25%]">
                     <div id="historyContainer" class="call-history bg-white rounded-[10px] p-[15px] h-full shadow-lg shadow-gray-500">
                         <div class="flex justify-between h-[50px] items-center ">
                             <div class="">
