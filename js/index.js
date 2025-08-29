@@ -53,10 +53,15 @@ for (let heartIcon of heartIcons) {
 
 const copyNUmbers= document.querySelectorAll('#copyNum');
 for(let copyNumber of copyNUmbers){
-    copyNumber.addEventListener('click',function(){
+ copyNumber.addEventListener("click", function() {
+        const hotline = copyNumber.closest(".action-card").querySelector("span").textContent;
+        navigator.clipboard.writeText(hotline);
+
+        alert(`Hotline number ${hotline} copied!`);
+
         copyCount++;
-        copyC.innerText=copyCount;
-    })
+        copyC.textContent = copyCount;
+    });
 }
 
 
@@ -78,7 +83,7 @@ for (let callBtn of callButtons) {
             return; 
         }
 
-        alert(`📞 Calling ${serviceName} ${serviceNumber}...`);
+        alert(`Calling ${serviceName} ${serviceNumber}...`);
 
         if (coinCount > 0) {
             coinCount-=20;
@@ -101,7 +106,18 @@ for (let callBtn of callButtons) {
 
         historyContainer.appendChild(li);
     });
-
-
-    // for clear call history 
 }
+
+// Clear Call History Button
+const clearBtn = document.querySelector("#historyContainer button");
+
+clearBtn.addEventListener("click", function () {
+    const historyContainer = document.querySelector("#historyContainer");
+    const historyItems = historyContainer.querySelectorAll("ul");
+
+    if (historyItems.length > 0) {
+        for (let historyItem of historyItems) {
+            historyItem.remove();  // Remove each history item
+        }
+    }
+});
